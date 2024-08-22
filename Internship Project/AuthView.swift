@@ -5,9 +5,10 @@ struct AuthView: View {
     var actionButtonTitle: String
     var footerText: String
     var footerAction: () -> Void
-    @Binding var username: String
-    @Binding var email: String?  // Optional email
+    var actionButtonAction: () -> Void
+    @Binding var email: String
     @Binding var password: String
+    var dateOfBirth: Binding<Date>? // Make dateOfBirth optional
 
     var body: some View {
         ZStack {
@@ -31,11 +32,11 @@ struct AuthView: View {
                     .padding(.bottom, 30)
                 
                 VStack(spacing: 15) {
-                    TextField("Username", text: $username)
+                    TextField("Email", text: $email)
                         .foregroundColor(Color(hex: "F5EDED"))
                         .textFieldStyle(.plain)
-                        .placeholder(when: username.isEmpty) {
-                            Text("Username")
+                        .placeholder(when: email.isEmpty) {
+                            Text("Email")
                                 .foregroundColor(Color(hex: "F5EDED"))
                                 .bold()
                         }
@@ -43,24 +44,6 @@ struct AuthView: View {
                     Rectangle()
                         .frame(height: 1)
                         .foregroundColor(Color(hex: "F5EDED"))
-                    
-                    if email != nil {
-                        TextField("Email", text: Binding(
-                            get: { email ?? "" },
-                            set: { email = $0.isEmpty ? nil : $0 }
-                        ))
-                            .foregroundColor(Color(hex: "F5EDED"))
-                            .textFieldStyle(.plain)
-                            .placeholder(when: email?.isEmpty ?? true) {
-                                Text("Email")
-                                    .foregroundColor(Color(hex: "F5EDED"))
-                                    .bold()
-                            }
-                        
-                        Rectangle()
-                            .frame(height: 1)
-                            .foregroundColor(Color(hex: "F5EDED"))
-                    }
                     
                     SecureField("Password", text: $password)
                         .foregroundColor(Color(hex: "F5EDED"))
@@ -75,8 +58,17 @@ struct AuthView: View {
                         .frame(height: 1)
                         .foregroundColor(Color(hex: "F5EDED"))
                     
+                    if let dateOfBirth = dateOfBirth {
+                        DatePicker("Date of Birth", selection: dateOfBirth, displayedComponents: .date)
+                            .foregroundColor(Color(hex: "F5EDED"))
+                            .padding()
+                            .background(Color(hex: "7FA1C3"))
+                            .cornerRadius(12)
+                            .padding(.bottom, 10)
+                    }
+                    
                     Button {
-                        // Action for the button
+                        actionButtonAction() // Call the action button action
                     } label: {
                         Text(actionButtonTitle)
                             .bold()

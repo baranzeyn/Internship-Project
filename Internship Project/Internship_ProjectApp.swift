@@ -10,12 +10,16 @@ import Firebase
 
 @main
 struct Internship_ProjectApp: App {
-    
-    init(){
-        FirebaseApp.configure()}
+    @StateObject private var coordinator = NavigationCoordinator()
+
+    init() {
+        FirebaseApp.configure()
+    }
+
     var body: some Scene {
         WindowGroup {
-            SignInView()
+            SignUpView() // Start with SignInView
+                .environmentObject(coordinator) // Provide the coordinator to the environment
         }
     }
 }

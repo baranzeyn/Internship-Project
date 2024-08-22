@@ -13,6 +13,7 @@
 		4445CE102C77CBAB007184AE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445CE0F2C77CBAB007184AE /* SignUpView.swift */; };
 		4445CE122C77CC03007184AE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445CE112C77CC03007184AE /* View.swift */; };
 		4445CE142C77CDFC007184AE /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445CE132C77CDFC007184AE /* AuthView.swift */; };
+		44E600FC2C77FDBA00AD5B5F /* NavigatonCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E600FB2C77FDBA00AD5B5F /* NavigatonCoordinator.swift */; };
 		44E86AE32C77AFEB00438277 /* Internship_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E86AE22C77AFEB00438277 /* Internship_ProjectApp.swift */; };
 		44E86AE52C77AFEB00438277 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E86AE42C77AFEB00438277 /* SignInView.swift */; };
 		44E86AE72C77AFEB00438277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E86AE62C77AFEB00438277 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		4445CE0F2C77CBAB007184AE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		4445CE112C77CC03007184AE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		4445CE132C77CDFC007184AE /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		44E600FB2C77FDBA00AD5B5F /* NavigatonCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatonCoordinator.swift; sourceTree = "<group>"; };
 		44E86ADF2C77AFEB00438277 /* Internship Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Internship Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E86AE22C77AFEB00438277 /* Internship_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internship_ProjectApp.swift; sourceTree = "<group>"; };
 		44E86AE42C77AFEB00438277 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 		44E86AD62C77AFEB00438277 = {
 			isa = PBXGroup;
 			children = (
+				44E600FB2C77FDBA00AD5B5F /* NavigatonCoordinator.swift */,
 				44E86AE12C77AFEB00438277 /* Internship Project */,
 				44E86AE02C77AFEB00438277 /* Products */,
 			);
@@ -168,6 +171,7 @@
 				44E86AE52C77AFEB00438277 /* SignInView.swift in Sources */,
 				4445CE142C77CDFC007184AE /* AuthView.swift in Sources */,
 				4445CE122C77CC03007184AE /* View.swift in Sources */,
+				44E600FC2C77FDBA00AD5B5F /* NavigatonCoordinator.swift in Sources */,
 				44E86AE32C77AFEB00438277 /* Internship_ProjectApp.swift in Sources */,
 				44E86AF12C77B21500438277 /* Color.swift in Sources */,
 			);
