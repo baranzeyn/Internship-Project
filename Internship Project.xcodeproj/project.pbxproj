@@ -13,6 +13,9 @@
 		4445CE102C77CBAB007184AE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445CE0F2C77CBAB007184AE /* SignUpView.swift */; };
 		4445CE122C77CC03007184AE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445CE112C77CC03007184AE /* View.swift */; };
 		4445CE142C77CDFC007184AE /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445CE132C77CDFC007184AE /* AuthView.swift */; };
+		4492EFCC2C78B81C00AAC8EE /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492EFCB2C78B81C00AAC8EE /* Onboarding.swift */; };
+		4492EFCE2C78C1FD00AAC8EE /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492EFCD2C78C1FD00AAC8EE /* SplashView.swift */; };
+		4492EFD42C78D3C500AAC8EE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492EFD32C78D3C500AAC8EE /* HomeView.swift */; };
 		44E600FC2C77FDBA00AD5B5F /* NavigatonCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E600FB2C77FDBA00AD5B5F /* NavigatonCoordinator.swift */; };
 		44E86AE32C77AFEB00438277 /* Internship_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E86AE22C77AFEB00438277 /* Internship_ProjectApp.swift */; };
 		44E86AE52C77AFEB00438277 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E86AE42C77AFEB00438277 /* SignInView.swift */; };
@@ -26,6 +29,9 @@
 		4445CE0F2C77CBAB007184AE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		4445CE112C77CC03007184AE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		4445CE132C77CDFC007184AE /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		4492EFCB2C78B81C00AAC8EE /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		4492EFCD2C78C1FD00AAC8EE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		4492EFD32C78D3C500AAC8EE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		44E600FB2C77FDBA00AD5B5F /* NavigatonCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatonCoordinator.swift; sourceTree = "<group>"; };
 		44E86ADF2C77AFEB00438277 /* Internship Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Internship Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E86AE22C77AFEB00438277 /* Internship_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internship_ProjectApp.swift; sourceTree = "<group>"; };
@@ -68,15 +74,18 @@
 		44E86AE12C77AFEB00438277 /* Internship Project */ = {
 			isa = PBXGroup;
 			children = (
-				44E86AE22C77AFEB00438277 /* Internship_ProjectApp.swift */,
-				44E86AE42C77AFEB00438277 /* SignInView.swift */,
 				4445CE0F2C77CBAB007184AE /* SignUpView.swift */,
+				44E86AE42C77AFEB00438277 /* SignInView.swift */,
+				4492EFCD2C78C1FD00AAC8EE /* SplashView.swift */,
+				4492EFCB2C78B81C00AAC8EE /* Onboarding.swift */,
+				44E86AE22C77AFEB00438277 /* Internship_ProjectApp.swift */,
 				4445CE0D2C77CB0C007184AE /* GoogleService-Info.plist */,
 				44E86AE62C77AFEB00438277 /* Assets.xcassets */,
 				44E86AE82C77AFEB00438277 /* Preview Content */,
 				44E86AF02C77B21500438277 /* Color.swift */,
 				4445CE112C77CC03007184AE /* View.swift */,
 				4445CE132C77CDFC007184AE /* AuthView.swift */,
+				4492EFD32C78D3C500AAC8EE /* HomeView.swift */,
 			);
 			path = "Internship Project";
 			sourceTree = "<group>";
@@ -170,10 +179,13 @@
 				4445CE102C77CBAB007184AE /* SignUpView.swift in Sources */,
 				44E86AE52C77AFEB00438277 /* SignInView.swift in Sources */,
 				4445CE142C77CDFC007184AE /* AuthView.swift in Sources */,
+				4492EFD42C78D3C500AAC8EE /* HomeView.swift in Sources */,
 				4445CE122C77CC03007184AE /* View.swift in Sources */,
 				44E600FC2C77FDBA00AD5B5F /* NavigatonCoordinator.swift in Sources */,
 				44E86AE32C77AFEB00438277 /* Internship_ProjectApp.swift in Sources */,
+				4492EFCC2C78B81C00AAC8EE /* Onboarding.swift in Sources */,
 				44E86AF12C77B21500438277 /* Color.swift in Sources */,
+				4492EFCE2C78C1FD00AAC8EE /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@ struct SignInView: View {
     @State private var password = ""
     @State private var showAlert = false
     @State private var alertMessage = ""
+    @State private var isSignInSuccessful = false
 
     var body: some View {
         NavigationStack(path: $coordinator.path) {
@@ -26,7 +27,11 @@ struct SignInView: View {
                     dateOfBirth: nil
                 )
                 .alert(isPresented: $showAlert) {
-                    Alert(title: Text("Sign In Status"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                    Alert(title: Text("Sign In Status"), message: Text(alertMessage), dismissButton: .default(Text("OK")) {
+                        if isSignInSuccessful {
+                            coordinator.navigateToHome()
+                        }
+                    })
                 }
             }
             .navigationDestination(isPresented: $coordinator.isShowingSignUp) {
@@ -35,7 +40,6 @@ struct SignInView: View {
             }
         }
         .onAppear {
-            // Ensure that when SignInView appears, it updates the coordinator
             coordinator.isShowingSignIn = true
             coordinator.isShowingSignUp = false
         }
@@ -52,10 +56,12 @@ struct SignInView: View {
             if let error = error {
                 alertMessage = "Error signing in: \(error.localizedDescription)"
                 showAlert = true
+                isSignInSuccessful = false
                 return
             }
 
             alertMessage = "User signed in successfully!"
+            isSignInSuccessful = true
             showAlert = true
         }
     }

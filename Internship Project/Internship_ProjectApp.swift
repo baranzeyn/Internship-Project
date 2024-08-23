@@ -18,8 +18,22 @@ struct Internship_ProjectApp: App {
 
     var body: some Scene {
         WindowGroup {
-            SignUpView() // Start with SignInView
-                .environmentObject(coordinator) // Provide the coordinator to the environment
+            NavigationStack {
+                if coordinator.isShowingHome {
+                    HomeView()
+                        .environmentObject(coordinator)
+                } else if coordinator.isShowingSignIn {
+                    SignInView()
+                        .environmentObject(coordinator)
+                } else if coordinator.isShowingSignUp {
+                    SignUpView()
+                        .environmentObject(coordinator)
+                } else {
+                    SplashView()
+                        .environmentObject(coordinator)
+                }
+            }
         }
     }
 }
+
